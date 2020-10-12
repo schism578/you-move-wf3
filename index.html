@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>YouMove</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <nav role="navigation">Nav Bar</nav>
+        <main role="main">
+            <section>
+                <header role="banner">
+                    <h1>Enter Your Info:</h1>
+                </header>
+                <form class='user-form'>
+                    <div>
+                        <label for="gender">Gender</label>
+                        <input type="text" name='gender' id='gender' placeholder='male/female' />
+                    </div>
+                    <div>
+                        <label for="height">Height</label>
+                        <input type="text" name='height' id='height' placeholder='70 (inches)' />
+                    </div>
+                    <div>
+                        <label for="weight">Weight</label>
+                        <input type="text" name='weight' id='weight' placeholder='170 (pounds)' />
+                    </div>
+                    <div>
+                        <label for="age">Age</label>
+                        <input type="age" name='age' id='age' placeholder='30 (years)' />
+                    </div>
+                </form>
+            </section>
+
+            <section>
+                <header role="banner">
+                    <h2>Log Your Food:</h2>
+                </header>
+                <form class='food-form'>
+                    <div>
+                        <label for="food-item">Food Item</label>
+                        <input type="text" name='food-item' id='food-item' placeholder='fat free yogurt' />
+                    </div>
+                    <div>
+                        <label for="quantity">Quantity</label>
+                        <input type="text" name='quantity' id='quantity' placeholder='2/3 cup' />
+                    </div>
+                    <header role="banner">
+                        <h3>Or Just Enter Your Calories for a Day:</h3>
+                    </header>
+                    <div>
+                        <label for="calories">Calories</label>
+                        <input type="text" name='calories' id='calories' placeholder='2000' />
+                    </div>
+
+                    <div class='workout-option'>
+                    <header>
+                        <h4>Select a Type of Workout:</h4>
+                    </header>
+                        <input type="radio" name="workout-type" value="1" class="workout-type-radio">
+                        <label for="workout-type">
+                            <span>Weights</span>
+                        </label>
+                        <input type="radio" name="workout-type" value="1" class="workout-type-radio">
+                        <label for="workout-type">
+                            <span>Cardio</span>
+                        </label>
+                        <input type="radio" name="workout-type" value="1" class="workout-type-radio">
+                        <label for="workout-type">
+                            <span>Crossfit</span>
+                        </label>
+                        <input type="radio" name="workout-type" value="1" class="workout-type-radio">
+                        <label for="workout-type">
+                            <span>All</span>
+                        </label>
+                    </div>
+                    <button type='submit'>Submit</button>
+                </form>
+            </section>
+        </main>
+    </body>
